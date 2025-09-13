@@ -1,0 +1,19 @@
+[project]
+name = 'suply-chain-financing-platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.stx-suply-chain-financing-platform]
+path = 'contracts/stx-suply-chain-financing-platform.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
